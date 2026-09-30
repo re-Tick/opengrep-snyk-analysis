@@ -1,0 +1,286 @@
+================================================================
+        OPENGREP vs SNYK REPORT COMPARISON TOOL                 
+================================================================
+OpenGrep Report : /home/opsmx/Desktop/Desktop-backup-19.March.2026/misc/DVWA/opengrep-dvwa-auto.json
+Snyk Report     : /home/opsmx/Desktop/Desktop-backup-19.March.2026/misc/DVWA/snyk-report.json
+Line Tolerance  : ±2 lines
+Match Mode      : smart
+
+Loaded 66 findings from OpenGrep
+Loaded 105 findings from Snyk
+
+================================================================
+                      SUMMARY STATISTICS                        
+================================================================
+Total Snyk findings        : 105
+Total OpenGrep findings    : 66
+Matched Snyk findings      : 27 (25.7% of Snyk)
+Matched OpenGrep findings  : 25 (37.9% of OpenGrep)
+Total Correlated Match Pairs: 27
+Uncommon Snyk findings     : 78
+Uncommon OpenGrep findings : 41
+
+================================================================
+COMMON / MATCHED FINDINGS (27 pairs)
+================================================================
+[  1] [HIGH  ] vulnerabilities/api/gen_openapi.php (Snyk L6 / OG L6)
+      Snyk     : php/TooPermissiveCorsHeader (CWEs: CWE-346, CWE-942)
+      OpenGrep : php.lang.security.php-permissive-cors.php-permissive-cors (CWEs: CWE-346)
+      Match    : Shared CWE: CWE-346 (Line diff 0)
+
+[  2] [HIGH  ] vulnerabilities/api/public/index.php (Snyk L11 / OG L11)
+      Snyk     : php/TooPermissiveCorsHeader (CWEs: CWE-346, CWE-942)
+      OpenGrep : php.lang.security.php-permissive-cors.php-permissive-cors (CWEs: CWE-346)
+      Match    : Shared CWE: CWE-346 (Line diff 0)
+
+[  3] [HIGH  ] vulnerabilities/api/src/HealthController.php (Snyk L88 / OG L88)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.injection.tainted-exec.tainted-exec (CWEs: CWE-78)
+      Match    : Shared CWE: CWE-78 (Line diff 0)
+
+[  4] [HIGH  ] vulnerabilities/bac/source/low.php (Snyk L81 / OG L79)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[  5] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L22 / OG L21)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[  6] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L29 / OG L28)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[  7] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L73 / OG L71)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[  8] [HIGH  ] vulnerabilities/brute/source/low.php (Snyk L13 / OG L12)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[  9] [HIGH  ] vulnerabilities/exec/source/high.php (Snyk L26 / OG L26)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 10] [HIGH  ] vulnerabilities/exec/source/high.php (Snyk L30 / OG L30)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 11] [HIGH  ] vulnerabilities/exec/source/low.php (Snyk L10 / OG L10)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 12] [HIGH  ] vulnerabilities/exec/source/low.php (Snyk L14 / OG L14)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 13] [HIGH  ] vulnerabilities/exec/source/medium.php (Snyk L19 / OG L19)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 14] [HIGH  ] vulnerabilities/exec/source/medium.php (Snyk L23 / OG L23)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : php.lang.security.exec-use.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 15] [HIGH  ] vulnerabilities/sqli/source/low.php (Snyk L11 / OG L10)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[ 16] [HIGH  ] vulnerabilities/sqli_blind/source/high.php (Snyk L13 / OG L11)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[ 17] [HIGH  ] vulnerabilities/sqli_blind/source/low.php (Snyk L13 / OG L11)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : php.lang.security.injection.tainted-sql-string.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[ 18] [HIGH  ] vulnerabilities/view_help.php (Snyk L20 / OG L20)
+      Snyk     : php/CodeInjection (CWEs: CWE-94)
+      OpenGrep : php.lang.security.eval-use.eval-use (CWEs: CWE-78)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 19] [HIGH  ] vulnerabilities/view_help.php (Snyk L20 / OG L20)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 20] [HIGH  ] vulnerabilities/view_help.php (Snyk L22 / OG L20)
+      Snyk     : php/CodeInjection (CWEs: CWE-94)
+      OpenGrep : php.lang.security.eval-use.eval-use (CWEs: CWE-78)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 2)
+
+[ 21] [HIGH  ] vulnerabilities/view_help.php (Snyk L22 / OG L20)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 2)
+
+[ 22] [HIGH  ] vulnerabilities/view_source.php (Snyk L63 / OG L63)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 23] [HIGH  ] vulnerabilities/view_source.php (Snyk L68 / OG L67)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 1)
+
+[ 24] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L14 / OG L14)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 25] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L18 / OG L18)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 26] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L22 / OG L22)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 27] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L26 / OG L26)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : php.lang.security.injection.tainted-filename.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+================================================================
+UNCOMMON SNYK FINDINGS (78 findings)
+================================================================
+[  1] dvwa/includes/dvwaPage.inc.php:226	php/WebCookieHttpOnlyDisabledExplicitly	CWEs: CWE-1004
+[  2] dvwa/includes/dvwaPage.inc.php:226	php/WebCookieSecureDisabledExplicitly	CWEs: CWE-614
+[  3] dvwa/includes/dvwaPage.inc.php:389	php/XSS                            	CWEs: CWE-79
+[  4] dvwa/includes/dvwaPage.inc.php:461	php/XSS                            	CWEs: CWE-79
+[  5] dvwa/includes/dvwaPage.inc.php:497	php/XSS                            	CWEs: CWE-79
+[  6] dvwa/includes/dvwaPage.inc.php:605	php/OR                             	CWEs: CWE-601
+[  7] dvwa/includes/dvwaPage.inc.php:651	php/InsecureHash                   	CWEs: CWE-916
+[  8] dvwa/js/dvwaPage.js:44	javascript/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[  9] login.php:27	php/InsecureHash                   	CWEs: CWE-916
+[ 10] login.php:40	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 11] vulnerabilities/api/src/Token.php:25	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 12] vulnerabilities/api/src/Token.php:39	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 13] vulnerabilities/authbypass/change_user_details.php:48	php/Sqli                           	CWEs: CWE-89
+[ 14] vulnerabilities/authbypass/change_user_details.php:48	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 15] vulnerabilities/bac/source/low.php:94	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 16] vulnerabilities/bac/source/low.php:94	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 17] vulnerabilities/brute/source/high.php:16	php/InsecureHash                   	CWEs: CWE-916
+[ 18] vulnerabilities/brute/source/high.php:20	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 19] vulnerabilities/brute/source/impossible.php:16	php/InsecureHash                   	CWEs: CWE-916
+[ 20] vulnerabilities/brute/source/low.php:9	php/InsecureHash                   	CWEs: CWE-916
+[ 21] vulnerabilities/brute/source/low.php:13	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 22] vulnerabilities/brute/source/medium.php:11	php/InsecureHash                   	CWEs: CWE-916
+[ 23] vulnerabilities/brute/source/medium.php:15	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 24] vulnerabilities/captcha/source/high.php:27	php/InsecureHash                   	CWEs: CWE-916
+[ 25] vulnerabilities/captcha/source/high.php:31	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 26] vulnerabilities/captcha/source/impossible.php:14	php/InsecureHash                   	CWEs: CWE-916
+[ 27] vulnerabilities/captcha/source/impossible.php:19	php/InsecureHash                   	CWEs: CWE-916
+[ 28] vulnerabilities/captcha/source/impossible.php:24	php/InsecureHash                   	CWEs: CWE-916
+[ 29] vulnerabilities/captcha/source/low.php:57	php/InsecureHash                   	CWEs: CWE-916
+[ 30] vulnerabilities/captcha/source/low.php:61	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 31] vulnerabilities/captcha/source/medium.php:65	php/InsecureHash                   	CWEs: CWE-916
+[ 32] vulnerabilities/captcha/source/medium.php:69	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 33] vulnerabilities/cryptography/source/check_token_high.php:24	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 34] vulnerabilities/cryptography/source/check_token_impossible.php:24	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 35] vulnerabilities/cryptography/source/ecb_attack.php:3	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 36] vulnerabilities/cryptography/source/ecb_attack.php:3	php/InsecureECB                    	CWEs: CWE-327
+[ 37] vulnerabilities/cryptography/source/ecb_attack.php:10	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 38] vulnerabilities/cryptography/source/medium.php:3	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 39] vulnerabilities/csrf/source/high.php:39	php/InsecureHash                   	CWEs: CWE-916
+[ 40] vulnerabilities/csrf/source/impossible.php:15	php/InsecureHash                   	CWEs: CWE-916
+[ 41] vulnerabilities/csrf/source/impossible.php:29	php/InsecureHash                   	CWEs: CWE-916
+[ 42] vulnerabilities/csrf/source/low.php:12	php/InsecureHash                   	CWEs: CWE-916
+[ 43] vulnerabilities/csrf/source/low.php:17	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 44] vulnerabilities/csrf/source/medium.php:14	php/InsecureHash                   	CWEs: CWE-916
+[ 45] vulnerabilities/csrf/source/medium.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 46] vulnerabilities/javascript/index.php:43	php/InsecureHash                   	CWEs: CWE-916
+[ 47] vulnerabilities/open_redirect/source/high.php:5	php/OR                             	CWEs: CWE-601
+[ 48] vulnerabilities/open_redirect/source/low.php:4	php/OR                             	CWEs: CWE-601
+[ 49] vulnerabilities/open_redirect/source/medium.php:11	php/OR                             	CWEs: CWE-601
+[ 50] vulnerabilities/sqli/session-input.php:28	php/XSS                            	CWEs: CWE-79
+[ 51] vulnerabilities/sqli/source/high.php:33	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 52] vulnerabilities/sqli/source/low.php:11	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 53] vulnerabilities/sqli/source/low.php:34	php/Sqli                           	CWEs: CWE-89
+[ 54] vulnerabilities/sqli/source/low.php:36	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 55] vulnerabilities/sqli/source/medium.php:12	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 56] vulnerabilities/sqli/source/medium.php:32	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 57] vulnerabilities/sqli/source/medium.php:55	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 58] vulnerabilities/sqli/test.php:3	php/HardcodedCredential/test       	CWEs: CWE-259, CWE-798
+[ 59] vulnerabilities/sqli/test.php:6	php/HardcodedCredential/test       	CWEs: CWE-259, CWE-798
+[ 60] vulnerabilities/sqli/test.php:12	php/XSS/test                       	CWEs: CWE-79
+[ 61] vulnerabilities/sqli_blind/cookie-input.php:12	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 62] vulnerabilities/sqli_blind/cookie-input.php:12	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 63] vulnerabilities/sqli_blind/index.php:64	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 64] vulnerabilities/sqli_blind/source/high.php:35	php/Sqli                           	CWEs: CWE-89
+[ 65] vulnerabilities/sqli_blind/source/low.php:34	php/Sqli                           	CWEs: CWE-89
+[ 66] vulnerabilities/sqli_blind/source/medium.php:36	php/Sqli                           	CWEs: CWE-89
+[ 67] vulnerabilities/view_source.php:104	php/XSS                            	CWEs: CWE-79
+[ 68] vulnerabilities/weak_id/source/high.php:10	php/InsecureHash                   	CWEs: CWE-916
+[ 69] vulnerabilities/weak_id/source/high.php:11	php/WebCookieHttpOnlyDisabledExplicitly	CWEs: CWE-1004
+[ 70] vulnerabilities/weak_id/source/high.php:11	php/WebCookieSecureDisabledExplicitly	CWEs: CWE-614
+[ 71] vulnerabilities/weak_id/source/low.php:11	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 72] vulnerabilities/weak_id/source/low.php:11	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 73] vulnerabilities/weak_id/source/medium.php:7	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 74] vulnerabilities/weak_id/source/medium.php:7	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 75] vulnerabilities/xss_s/index.php:18	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 76] vulnerabilities/xss_s/source/high.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 77] vulnerabilities/xss_s/source/low.php:17	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 78] vulnerabilities/xss_s/source/medium.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+
+================================================================
+UNCOMMON OPENGREP FINDINGS (41 findings)
+================================================================
+[  1] instructions.php:26	php.lang.security.injection.tainted-filename.tainted-filename	CWEs: CWE-918
+[  2] login.php:41	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[  3] phpinfo.php:8	php.lang.security.phpinfo-use.phpinfo-use	CWEs: CWE-200
+[  4] vulnerabilities/api/src/HealthController.php:88	php.lang.security.exec-use.exec-use	CWEs: CWE-94
+[  5] vulnerabilities/api/src/Token.php:39	php.lang.security.audit.openssl-decrypt-validate.openssl-decrypt-validate	CWEs: CWE-252
+[  6] vulnerabilities/bac/source/low.php:22	php.lang.security.injection.tainted-sql-string.tainted-sql-string	CWEs: CWE-89
+[  7] vulnerabilities/bac/source/low.php:35	php.lang.security.injection.tainted-sql-string.tainted-sql-string	CWEs: CWE-89
+[  8] vulnerabilities/brute/source/high.php:22	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[  9] vulnerabilities/brute/source/low.php:15	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 10] vulnerabilities/brute/source/medium.php:17	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 11] vulnerabilities/captcha/source/impossible.php:46	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 12] vulnerabilities/cryptography/source/ecb_attack.php:92	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 13] vulnerabilities/cryptography/source/ecb_attack.php:92	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 14] vulnerabilities/csrf/test_credentials.php:23	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 15] vulnerabilities/exec/source/high.php:26	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 16] vulnerabilities/exec/source/high.php:26	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 17] vulnerabilities/exec/source/high.php:30	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 18] vulnerabilities/exec/source/high.php:30	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 19] vulnerabilities/exec/source/impossible.php:22	php.lang.security.exec-use.exec-use	CWEs: CWE-94
+[ 20] vulnerabilities/exec/source/impossible.php:22	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 21] vulnerabilities/exec/source/impossible.php:22	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 22] vulnerabilities/exec/source/impossible.php:26	php.lang.security.exec-use.exec-use	CWEs: CWE-94
+[ 23] vulnerabilities/exec/source/impossible.php:26	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 24] vulnerabilities/exec/source/impossible.php:26	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 25] vulnerabilities/exec/source/low.php:10	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 26] vulnerabilities/exec/source/low.php:10	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 27] vulnerabilities/exec/source/low.php:14	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 28] vulnerabilities/exec/source/low.php:14	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 29] vulnerabilities/exec/source/medium.php:19	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 30] vulnerabilities/exec/source/medium.php:19	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 31] vulnerabilities/exec/source/medium.php:23	php.lang.security.injection.tainted-exec.tainted-exec	CWEs: CWE-78
+[ 32] vulnerabilities/exec/source/medium.php:23	php.lang.security.tainted-exec.tainted-exec	CWEs: CWE-94
+[ 33] vulnerabilities/fi/source/high.php:7	php.lang.security.injection.tainted-filename.tainted-filename	CWEs: CWE-918
+[ 34] vulnerabilities/javascript/index.php:43	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 35] vulnerabilities/javascript/index.php:57	php.lang.security.md5-loose-equality.md5-loose-equality	CWEs: CWE-697
+[ 36] vulnerabilities/javascript/source/high.js:1	javascript.browser.security.eval-detected.eval-detected	CWEs: CWE-95
+[ 37] vulnerabilities/javascript/source/high.js:1	javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp	CWEs: CWE-1333
+[ 38] vulnerabilities/upload/source/impossible.php:54	php.lang.security.unlink-use.unlink-use	CWEs: CWE-22
+[ 39] vulnerabilities/view_help.php:22	php.lang.security.eval-use.eval-use	CWEs: CWE-78
+[ 40] vulnerabilities/view_help.php:22	php.lang.security.injection.tainted-filename.tainted-filename	CWEs: CWE-918
+[ 41] vulnerabilities/view_source.php:68	php.lang.security.injection.tainted-filename.tainted-filename	CWEs: CWE-918

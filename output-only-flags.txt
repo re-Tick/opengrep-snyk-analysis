@@ -1,0 +1,389 @@
+================================================================
+        OPENGREP vs SNYK REPORT COMPARISON TOOL                 
+================================================================
+OpenGrep Report : /home/opsmx/Desktop/Desktop-backup-19.March.2026/misc/DVWA/opengrep-dvwa-only-flags.json
+Snyk Report     : /home/opsmx/Desktop/Desktop-backup-19.March.2026/misc/DVWA/snyk-report.json
+Line Tolerance  : ±2 lines
+Match Mode      : smart
+
+Loaded 108 findings from OpenGrep
+Loaded 105 findings from Snyk
+
+================================================================
+                      SUMMARY STATISTICS                        
+================================================================
+Total Snyk findings        : 105
+Total OpenGrep findings    : 108
+Matched Snyk findings      : 47 (44.8% of Snyk)
+Matched OpenGrep findings  : 44 (40.7% of OpenGrep)
+Total Correlated Match Pairs: 47
+Uncommon Snyk findings     : 58
+Uncommon OpenGrep findings : 64
+
+================================================================
+COMMON / MATCHED FINDINGS (47 pairs)
+================================================================
+[  1] [HIGH  ] dvwa/includes/dvwaPage.inc.php (Snyk L651 / OG L651)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[  2] [HIGH  ] login.php (Snyk L27 / OG L27)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[  3] [HIGH  ] vulnerabilities/api/gen_openapi.php (Snyk L6 / OG L6)
+      Snyk     : php/TooPermissiveCorsHeader (CWEs: CWE-346, CWE-942)
+      OpenGrep : opengrep-rules.php.lang.security.php-permissive-cors (CWEs: CWE-346)
+      Match    : Shared CWE: CWE-346 (Line diff 0)
+
+[  4] [HIGH  ] vulnerabilities/api/public/index.php (Snyk L11 / OG L11)
+      Snyk     : php/TooPermissiveCorsHeader (CWEs: CWE-346, CWE-942)
+      OpenGrep : opengrep-rules.php.lang.security.php-permissive-cors (CWEs: CWE-346)
+      Match    : Shared CWE: CWE-346 (Line diff 0)
+
+[  5] [HIGH  ] vulnerabilities/api/src/HealthController.php (Snyk L88 / OG L88)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-exec (CWEs: CWE-78)
+      Match    : Shared CWE: CWE-78 (Line diff 0)
+
+[  6] [HIGH  ] vulnerabilities/bac/source/low.php (Snyk L81 / OG L79)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[  7] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L22 / OG L21)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[  8] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L29 / OG L28)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[  9] [HIGH  ] vulnerabilities/bac/source/medium.php (Snyk L73 / OG L71)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[ 10] [HIGH  ] vulnerabilities/brute/source/high.php (Snyk L16 / OG L16)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 11] [HIGH  ] vulnerabilities/brute/source/impossible.php (Snyk L16 / OG L16)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 12] [HIGH  ] vulnerabilities/brute/source/low.php (Snyk L9 / OG L9)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 13] [HIGH  ] vulnerabilities/brute/source/low.php (Snyk L13 / OG L12)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[ 14] [HIGH  ] vulnerabilities/brute/source/medium.php (Snyk L11 / OG L11)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 15] [HIGH  ] vulnerabilities/captcha/source/high.php (Snyk L27 / OG L27)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 16] [HIGH  ] vulnerabilities/captcha/source/impossible.php (Snyk L14 / OG L14)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 17] [HIGH  ] vulnerabilities/captcha/source/impossible.php (Snyk L19 / OG L19)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 18] [HIGH  ] vulnerabilities/captcha/source/impossible.php (Snyk L24 / OG L24)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 19] [HIGH  ] vulnerabilities/captcha/source/low.php (Snyk L57 / OG L57)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 20] [HIGH  ] vulnerabilities/captcha/source/medium.php (Snyk L65 / OG L65)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 21] [HIGH  ] vulnerabilities/csrf/source/high.php (Snyk L39 / OG L39)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 22] [HIGH  ] vulnerabilities/csrf/source/impossible.php (Snyk L15 / OG L15)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 23] [HIGH  ] vulnerabilities/csrf/source/impossible.php (Snyk L29 / OG L29)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 24] [HIGH  ] vulnerabilities/csrf/source/low.php (Snyk L12 / OG L12)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 25] [HIGH  ] vulnerabilities/csrf/source/medium.php (Snyk L14 / OG L14)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+[ 26] [HIGH  ] vulnerabilities/exec/source/high.php (Snyk L26 / OG L26)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 27] [HIGH  ] vulnerabilities/exec/source/high.php (Snyk L30 / OG L30)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 28] [HIGH  ] vulnerabilities/exec/source/low.php (Snyk L10 / OG L10)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 29] [HIGH  ] vulnerabilities/exec/source/low.php (Snyk L14 / OG L14)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 30] [HIGH  ] vulnerabilities/exec/source/medium.php (Snyk L19 / OG L19)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 31] [HIGH  ] vulnerabilities/exec/source/medium.php (Snyk L23 / OG L23)
+      Snyk     : php/CommandInjection (CWEs: CWE-78)
+      OpenGrep : opengrep-rules.php.lang.security.exec-use (CWEs: CWE-94)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 32] [HIGH  ] vulnerabilities/sqli/source/low.php (Snyk L11 / OG L10)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 1)
+
+[ 33] [HIGH  ] vulnerabilities/sqli/test.php (Snyk L3 / OG L4)
+      Snyk     : php/HardcodedCredential/test (CWEs: CWE-259, CWE-798)
+      OpenGrep : opengrep-rules.generic.secrets.gitleaks.hashicorp-tf-password (CWEs: CWE-798)
+      Match    : Shared CWE: CWE-798 (Line diff 1)
+
+[ 34] [HIGH  ] vulnerabilities/sqli/test.php (Snyk L6 / OG L4)
+      Snyk     : php/HardcodedCredential/test (CWEs: CWE-259, CWE-798)
+      OpenGrep : opengrep-rules.generic.secrets.gitleaks.hashicorp-tf-password (CWEs: CWE-798)
+      Match    : Shared CWE: CWE-798 (Line diff 2)
+
+[ 35] [HIGH  ] vulnerabilities/sqli_blind/source/high.php (Snyk L13 / OG L11)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[ 36] [HIGH  ] vulnerabilities/sqli_blind/source/low.php (Snyk L13 / OG L11)
+      Snyk     : php/Sqli (CWEs: CWE-89)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-sql-string (CWEs: CWE-89)
+      Match    : Shared CWE: CWE-89 (Line diff 2)
+
+[ 37] [HIGH  ] vulnerabilities/view_help.php (Snyk L20 / OG L20)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 38] [HIGH  ] vulnerabilities/view_help.php (Snyk L20 / OG L20)
+      Snyk     : php/CodeInjection (CWEs: CWE-94)
+      OpenGrep : opengrep-rules.php.lang.security.eval-use (CWEs: CWE-78)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 0)
+
+[ 39] [HIGH  ] vulnerabilities/view_help.php (Snyk L22 / OG L20)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 2)
+
+[ 40] [HIGH  ] vulnerabilities/view_help.php (Snyk L22 / OG L20)
+      Snyk     : php/CodeInjection (CWEs: CWE-94)
+      OpenGrep : opengrep-rules.php.lang.security.eval-use (CWEs: CWE-78)
+      Match    : CWE Family match: Family group [78 77 88 94] (Line diff 2)
+
+[ 41] [HIGH  ] vulnerabilities/view_source.php (Snyk L63 / OG L63)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 42] [HIGH  ] vulnerabilities/view_source.php (Snyk L68 / OG L67)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 1)
+
+[ 43] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L14 / OG L14)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 44] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L18 / OG L18)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 45] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L22 / OG L22)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 46] [HIGH  ] vulnerabilities/view_source_all.php (Snyk L26 / OG L26)
+      Snyk     : php/PT (CWEs: CWE-23)
+      OpenGrep : opengrep-rules.php.lang.security.injection.tainted-filename (CWEs: CWE-918)
+      Match    : CWE Family match: Family group [22 23 36 73 918] (Line diff 0)
+
+[ 47] [HIGH  ] vulnerabilities/weak_id/source/high.php (Snyk L10 / OG L10)
+      Snyk     : php/InsecureHash (CWEs: CWE-916)
+      OpenGrep : opengrep-rules.php.lang.security.weak-crypto (CWEs: CWE-328)
+      Match    : CWE Family match: Family group [327 328 330 326 916] (Line diff 0)
+
+================================================================
+UNCOMMON SNYK FINDINGS (58 findings)
+================================================================
+[  1] dvwa/includes/dvwaPage.inc.php:226	php/WebCookieSecureDisabledExplicitly	CWEs: CWE-614
+[  2] dvwa/includes/dvwaPage.inc.php:226	php/WebCookieHttpOnlyDisabledExplicitly	CWEs: CWE-1004
+[  3] dvwa/includes/dvwaPage.inc.php:389	php/XSS                            	CWEs: CWE-79
+[  4] dvwa/includes/dvwaPage.inc.php:461	php/XSS                            	CWEs: CWE-79
+[  5] dvwa/includes/dvwaPage.inc.php:497	php/XSS                            	CWEs: CWE-79
+[  6] dvwa/includes/dvwaPage.inc.php:605	php/OR                             	CWEs: CWE-601
+[  7] dvwa/js/dvwaPage.js:44	javascript/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[  8] login.php:40	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[  9] vulnerabilities/api/src/Token.php:25	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 10] vulnerabilities/api/src/Token.php:39	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 11] vulnerabilities/authbypass/change_user_details.php:48	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 12] vulnerabilities/authbypass/change_user_details.php:48	php/Sqli                           	CWEs: CWE-89
+[ 13] vulnerabilities/bac/source/low.php:94	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 14] vulnerabilities/bac/source/low.php:94	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 15] vulnerabilities/brute/source/high.php:20	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 16] vulnerabilities/brute/source/low.php:13	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 17] vulnerabilities/brute/source/medium.php:15	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 18] vulnerabilities/captcha/source/high.php:31	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 19] vulnerabilities/captcha/source/low.php:61	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 20] vulnerabilities/captcha/source/medium.php:69	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 21] vulnerabilities/cryptography/source/check_token_high.php:24	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 22] vulnerabilities/cryptography/source/check_token_impossible.php:24	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 23] vulnerabilities/cryptography/source/ecb_attack.php:3	php/InsecureECB                    	CWEs: CWE-327
+[ 24] vulnerabilities/cryptography/source/ecb_attack.php:3	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 25] vulnerabilities/cryptography/source/ecb_attack.php:10	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 26] vulnerabilities/cryptography/source/medium.php:3	php/HardcodedNonCryptoSecret       	CWEs: CWE-547
+[ 27] vulnerabilities/csrf/source/low.php:17	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 28] vulnerabilities/csrf/source/medium.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 29] vulnerabilities/javascript/index.php:43	php/InsecureHash                   	CWEs: CWE-916
+[ 30] vulnerabilities/open_redirect/source/high.php:5	php/OR                             	CWEs: CWE-601
+[ 31] vulnerabilities/open_redirect/source/low.php:4	php/OR                             	CWEs: CWE-601
+[ 32] vulnerabilities/open_redirect/source/medium.php:11	php/OR                             	CWEs: CWE-601
+[ 33] vulnerabilities/sqli/session-input.php:28	php/XSS                            	CWEs: CWE-79
+[ 34] vulnerabilities/sqli/source/high.php:33	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 35] vulnerabilities/sqli/source/low.php:11	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 36] vulnerabilities/sqli/source/low.php:34	php/Sqli                           	CWEs: CWE-89
+[ 37] vulnerabilities/sqli/source/low.php:36	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 38] vulnerabilities/sqli/source/medium.php:12	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 39] vulnerabilities/sqli/source/medium.php:32	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 40] vulnerabilities/sqli/source/medium.php:55	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 41] vulnerabilities/sqli/test.php:12	php/XSS/test                       	CWEs: CWE-79
+[ 42] vulnerabilities/sqli_blind/cookie-input.php:12	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 43] vulnerabilities/sqli_blind/cookie-input.php:12	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 44] vulnerabilities/sqli_blind/index.php:64	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 45] vulnerabilities/sqli_blind/source/high.php:35	php/Sqli                           	CWEs: CWE-89
+[ 46] vulnerabilities/sqli_blind/source/low.php:34	php/Sqli                           	CWEs: CWE-89
+[ 47] vulnerabilities/sqli_blind/source/medium.php:36	php/Sqli                           	CWEs: CWE-89
+[ 48] vulnerabilities/view_source.php:104	php/XSS                            	CWEs: CWE-79
+[ 49] vulnerabilities/weak_id/source/high.php:11	php/WebCookieSecureDisabledExplicitly	CWEs: CWE-614
+[ 50] vulnerabilities/weak_id/source/high.php:11	php/WebCookieHttpOnlyDisabledExplicitly	CWEs: CWE-1004
+[ 51] vulnerabilities/weak_id/source/low.php:11	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 52] vulnerabilities/weak_id/source/low.php:11	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 53] vulnerabilities/weak_id/source/medium.php:7	php/WebCookieSecureDisabledByDefault	CWEs: CWE-614
+[ 54] vulnerabilities/weak_id/source/medium.php:7	php/WebCookieHttpOnlyDisabledByDefault	CWEs: CWE-1004
+[ 55] vulnerabilities/xss_s/index.php:18	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 56] vulnerabilities/xss_s/source/high.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 57] vulnerabilities/xss_s/source/low.php:17	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+[ 58] vulnerabilities/xss_s/source/medium.php:19	php/ServerLeak                     	CWEs: CWE-200, CWE-209
+
+================================================================
+UNCOMMON OPENGREP FINDINGS (64 findings)
+================================================================
+[  1] Dockerfile:1	opengrep-rules.dockerfile.audit.dockerfile-source-not-pinned	CWEs: None
+[  2] Dockerfile:10	opengrep-rules.dockerfile.best-practice.missing-no-install-recommends	CWEs: None
+[  3] dvwa/js/dvwaPage.js:16	opengrep-rules.javascript.lang.best-practice.javascript-alert	CWEs: None
+[  4] dvwa/js/dvwaPage.js:38	opengrep-rules.javascript.lang.best-practice.javascript-confirm	CWEs: None
+[  5] instructions.php:26	opengrep-rules.php.lang.security.injection.tainted-filename	CWEs: CWE-918
+[  6] phpinfo.php:8	opengrep-rules.php.lang.security.phpinfo-use	CWEs: CWE-200
+[  7] vulnerabilities/api/src/HealthController.php:88	opengrep-rules.php.lang.security.exec-use	CWEs: CWE-94
+[  8] vulnerabilities/api/src/Token.php:39	opengrep-rules.php.lang.security.audit.openssl-decrypt-validate	CWEs: CWE-252
+[  9] vulnerabilities/authbypass/authbypass.js:43	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 10] vulnerabilities/authbypass/authbypass.js:43	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 11] vulnerabilities/authbypass/authbypass.js:45	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 12] vulnerabilities/authbypass/authbypass.js:45	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 13] vulnerabilities/authbypass/authbypass.js:47	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 14] vulnerabilities/authbypass/authbypass.js:47	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 15] vulnerabilities/authbypass/authbypass.js:49	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 16] vulnerabilities/authbypass/authbypass.js:49	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 17] vulnerabilities/bac/source/low.php:22	opengrep-rules.php.lang.security.injection.tainted-sql-string	CWEs: CWE-89
+[ 18] vulnerabilities/bac/source/low.php:35	opengrep-rules.php.lang.security.injection.tainted-sql-string	CWEs: CWE-89
+[ 19] vulnerabilities/csp/source/high.js:9	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 20] vulnerabilities/csp/source/high.js:9	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 21] vulnerabilities/csp/source/impossible.js:9	opengrep-rules.javascript.browser.security.insecure-document-method	CWEs: CWE-79
+[ 22] vulnerabilities/csp/source/impossible.js:9	opengrep-rules.javascript.browser.security.insecure-innerhtml	CWEs: CWE-79
+[ 23] vulnerabilities/csp/source/jsonp.php:12	opengrep-rules.php.lang.security.injection.echoed-request	CWEs: CWE-79
+[ 24] vulnerabilities/csrf/help/help.php:54	opengrep-rules.generic.secrets.gitleaks.generic-api-key	CWEs: CWE-798
+[ 25] vulnerabilities/csrf/test_credentials.php:19	opengrep-rules.php.lang.security.weak-crypto	CWEs: CWE-328
+[ 26] vulnerabilities/exec/source/high.php:26	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 27] vulnerabilities/exec/source/high.php:26	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 28] vulnerabilities/exec/source/high.php:30	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 29] vulnerabilities/exec/source/high.php:30	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 30] vulnerabilities/exec/source/impossible.php:22	opengrep-rules.php.lang.security.exec-use	CWEs: CWE-94
+[ 31] vulnerabilities/exec/source/impossible.php:22	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 32] vulnerabilities/exec/source/impossible.php:22	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 33] vulnerabilities/exec/source/impossible.php:26	opengrep-rules.php.lang.security.exec-use	CWEs: CWE-94
+[ 34] vulnerabilities/exec/source/impossible.php:26	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 35] vulnerabilities/exec/source/impossible.php:26	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 36] vulnerabilities/exec/source/low.php:10	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 37] vulnerabilities/exec/source/low.php:10	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 38] vulnerabilities/exec/source/low.php:14	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 39] vulnerabilities/exec/source/low.php:14	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 40] vulnerabilities/exec/source/medium.php:19	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 41] vulnerabilities/exec/source/medium.php:19	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 42] vulnerabilities/exec/source/medium.php:23	opengrep-rules.php.lang.security.injection.tainted-exec	CWEs: CWE-78
+[ 43] vulnerabilities/exec/source/medium.php:23	opengrep-rules.php.lang.security.tainted-exec	CWEs: CWE-94
+[ 44] vulnerabilities/fi/source/high.php:7	opengrep-rules.php.lang.security.injection.tainted-filename	CWEs: CWE-918
+[ 45] vulnerabilities/javascript/index.php:43	opengrep-rules.php.lang.security.md5-loose-equality	CWEs: CWE-697
+[ 46] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.browser.security.eval-detected	CWEs: CWE-95
+[ 47] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 48] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 49] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 50] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 51] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.detect-non-literal-regexp	CWEs: CWE-1333
+[ 52] vulnerabilities/javascript/source/high.js:1	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 53] vulnerabilities/javascript/source/high_unobfuscated.js:60	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 54] vulnerabilities/javascript/source/high_unobfuscated.js:108	opengrep-rules.javascript.lang.security.audit.unsafe-dynamic-method	CWEs: CWE-94
+[ 55] vulnerabilities/javascript/source/high_unobfuscated.js:438	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 56] vulnerabilities/javascript/source/high_unobfuscated.js:441	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 57] vulnerabilities/javascript/source/high_unobfuscated.js:442	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 58] vulnerabilities/javascript/source/high_unobfuscated.js:446	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 59] vulnerabilities/javascript/source/high_unobfuscated.js:447	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 60] vulnerabilities/javascript/source/high_unobfuscated.js:448	opengrep-rules.javascript.lang.correctness.useless-assignment	CWEs: None
+[ 61] vulnerabilities/upload/source/impossible.php:54	opengrep-rules.php.lang.security.unlink-use	CWEs: CWE-22
+[ 62] vulnerabilities/view_help.php:22	opengrep-rules.php.lang.security.eval-use	CWEs: CWE-78
+[ 63] vulnerabilities/view_help.php:22	opengrep-rules.php.lang.security.injection.tainted-filename	CWEs: CWE-918
+[ 64] vulnerabilities/view_source.php:68	opengrep-rules.php.lang.security.injection.tainted-filename	CWEs: CWE-918
